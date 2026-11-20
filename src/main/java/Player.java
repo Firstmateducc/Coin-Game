@@ -4,7 +4,7 @@ import zero.GameApp;
 public class Player {
     private double x;
     private double y;
-    private final double size = 20;
+    private final double size = 24;
     private final double speed = 200;
 
     public Player(double startX, double startY) {
