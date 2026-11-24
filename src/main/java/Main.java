@@ -21,6 +21,7 @@ public class Main extends GameApp {
     @Override public void setup() {
         input =  new PlayerInput(this);
         score = new ScoreDisplay();
+        score.setCaption("Score");
         message = new Label("");
         var restartButton = new Button("Restart");
         restartButton.onClick(() -> restart());
@@ -64,7 +65,7 @@ public class Main extends GameApp {
         background(Color.rgb(240,248,255));
         fill(Color.rgb(47,79,79));
         textSize(20);
-        text("Click the canvas, then hold the arrow keys.", 20, 30);
+        text("Click the canvas, then hold the arrow keys or WASD.", 20, 30);
         for(Coin each : coins) each.draw(this);
         player.draw(this);
     }
